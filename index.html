@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bunji Federation - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#citizenship">Citizenship</a></li>
+                <li><a href="#government">Government</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome to the Bunji Federation</h1>
+        <p>Home of Friendship, Unity, and Growth</p>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>The Bunji Federation is a micronation founded on the principles of friendship, cooperation, and community. Our mission is to unite people globally through these shared values.</p>
+        <h3>Our Flag and Emblem</h3>
+        <img src="assets/images/flag.png" alt="Bunji Federation Flag" width="300">
+    </section>
+
+    <section id="citizenship">
+        <h2>Citizenship</h2>
+        <p>Become a part of our growing community by applying for citizenship.</p>
+        <button onclick="document.getElementById('formModal').style.display='block'">Apply Now</button>
+        <!-- Citizenship Form Modal -->
+        <div id="formModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="document.getElementById('formModal').style.display='none'">&times;</span>
+                <h3>Citizenship Application</h3>
+                <form>
+                    <label for="name">Full Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="dob">Date of Birth:</label><br>
+                    <input type="date" id="dob" name="dob" required><br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="country">Country of Residence:</label><br>
+                    <input type="text" id="country" name="country" required><br><br>
+                    <label for="reason">Why do you want to become a citizen?</label><br>
+                    <textarea id="reason" name="reason" rows="4" required></textarea><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="government">
+        <h2>Government Structure</h2>
+        <p>The Bunji Federation follows a Democratic Republic model, where citizens participate in national decision-making.</p>
+    </section>
+
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <p>Join us for our upcoming events, including Friendship Day celebrations and more.</p>
+    </section>
+
+    <footer id="contact">
+        <h3>Contact Us</h3>
+        <p>Email: contact@bunjifederation.org</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
